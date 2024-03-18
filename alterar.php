@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Nome = $_POST['Nome'];
         $Quantidade = $_POST['Quantidade'];
         $id =$_POST['id'];
-    $sql = "UPDATE `produtos` SET `Nome`='$Nome',`Quantidade`='$Quantidade' WHERE id=$id";
+    $sql = "UPDATE `produtos` SET `Nome`='$Nome',`Quantidade`='$Quantidade' WHERE id='$id'";
     }
 
 
