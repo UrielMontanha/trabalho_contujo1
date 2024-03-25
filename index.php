@@ -17,8 +17,7 @@ include("conecta.php");
   <tr>
     <th> Produtos </th>
     <th> Quantidade </th>
-    <th> Excluir </th>
-    <th> Alterar </th>
+    <th> Id </th>
   </tr>
   
   
@@ -65,11 +64,12 @@ include("conecta.php");
   </tr>
 
   <tr>
-    <td><a href="excluir.php"></a></td>
-  </tr>
+  <?php $sql = "SELECT id FROM produtos WHERE id=1000";
+  $resultado = mysqli_query($conexao, $sql);
+  $dados = mysqli_fetch_assoc($resultado);
 
-  <tr>
-    <td><a href="alterar.php"></a></td>
+  echo ''.$dados['id'].'';
+  ?>
   </tr>
 
 
