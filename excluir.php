@@ -6,7 +6,7 @@
     <title>Excluir</title>
 </head>
 <body>
-<form method="GET">
+<form method="post">
         <label>ID:</label>
         <input type="text" name="id" size="100">
         <br>
@@ -14,11 +14,11 @@
         <input type="submit" value="Cadastrar">
     </form>
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // verifica se o formulário foi enviado
 
-    if (isset($_GET["id"])){
-        $id = $_GET['id'];
+    if (isset($_POST["id"])){
+        $id = $_POST['id'];
             $sql = "DELETE FROM `produtos` WHERE id=$id";
     }
 
