@@ -6,7 +6,7 @@
     <title>Excluir</title>
 </head>
 <body>
-<form method="post">
+<form method="GET">
         <label>ID:</label>
         <input type="text" name="id" size="100">
         <br>
@@ -14,7 +14,7 @@
         <input type="submit" value="Cadastrar">
     </form>
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // verifica se o formulário foi enviado
 
     if (isset($_POST["id"])){
