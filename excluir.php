@@ -11,7 +11,7 @@
         <input type="text" name="id" size="100">
         <br>
         <br>
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Excluir">
     </form>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

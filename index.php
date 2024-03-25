@@ -18,8 +18,7 @@ include("conecta.php");
     <th> Produtos </th>
     <th> Quantidade </th>
     <th> Id </th>
-    <th>Excluir</th>
-    <th>Editar</th>
+    <th> Opções</th>
   </tr>
 
   <tr>
@@ -45,6 +44,7 @@ include("conecta.php");
   echo ''.$dados['id'].'';
   ?>
   </td>
+  <td><a href="excluir.php">Excluir</a></td>
 </tr>
 
   <tr>
@@ -70,8 +70,7 @@ include("conecta.php");
   echo ''.$dados['id'].'';
   ?>
   </td>
-<td><a href="excluir.php"></a></td></tr>
-  <tr></tr>
+  <td><a href="alterar.php">Editar</a></td>
 </table>
   </fieldset>
 

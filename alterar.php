@@ -7,7 +7,7 @@
 </head>
 <body>
 <form method="post">
-        ID do Produto a ser alterado:<label>id:</label>
+        ID do Produto a ser alterado:
         <input type="text" name="id" size="100">
         <br>
         <br>
