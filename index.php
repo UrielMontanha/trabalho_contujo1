@@ -13,7 +13,7 @@ include("conecta.php");
 <body>
     <fieldset><legend><h1>Lista de Produtos</h1></legend>
 
-<table>
+    <table border="1">
   <tr>
     <th> Produtos </th>
     <th> Quantidade </th>
@@ -39,7 +39,14 @@ include("conecta.php");
   $dados = mysqli_fetch_assoc($resultado);
 
   echo ''.$dados['Quantidade'].'';
-  ?></td>
+  ?></td><td>
+  <?php $sql = "SELECT id FROM produtos WHERE id=1000";
+  $resultado = mysqli_query($conexao, $sql);
+  $dados = mysqli_fetch_assoc($resultado);
+
+  echo ''.$dados['id'].'';
+  ?>
+  </td>
 
   </tr>
 
@@ -64,12 +71,6 @@ include("conecta.php");
   </tr>
 
   <tr>
-  <?php $sql = "SELECT id FROM produtos WHERE id=1000";
-  $resultado = mysqli_query($conexao, $sql);
-  $dados = mysqli_fetch_assoc($resultado);
-
-  echo ''.$dados['id'].'';
-  ?>
   </tr>
 
 
